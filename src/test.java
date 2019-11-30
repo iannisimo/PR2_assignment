@@ -15,7 +15,7 @@ public class test {
     private static final String PW_C = "pwd_c";
 
     public static void main(String[] args) {
-        System.out.println("\u001B[1mTesting DataBoard.Board\u001B[0m\n");
+        System.out.println("\u001B[1mTesting Board\u001B[0m\n");
         DataBoard<Data> a = new Board<>(USER_A, PW_A);
         DataBoard<Data> b = new Board<>(USER_B, PW_B);
         DataBoard<Data> c = new Board<>(USER_C, PW_C);
@@ -25,7 +25,7 @@ public class test {
             System.out.print("\n\u001B[1m\u001B[31mTHIS SHOULD NOT HAVE HAPPENED\u001B[0m\n\n");
             e.printStackTrace();
         }
-        System.out.println("\n\u001B[1mTesting DataBoard.Board2\u001B[0m\n");
+        System.out.println("\n\u001B[1mTesting Board2\u001B[0m\n");
         a = new Board2<>(USER_A, PW_A);
         b = new Board2<>(USER_B, PW_B);
         c = new Board2<>(USER_C, PW_C);
@@ -37,7 +37,7 @@ public class test {
         }
     }
 
-    public static Boolean batch(DataBoard<Data> a, DataBoard<Data> b, DataBoard<Data> c) throws NullPointerException, InvalidActionException {
+    private static Boolean batch(DataBoard<Data> a, DataBoard<Data> b, DataBoard<Data> c) throws NullPointerException, InvalidActionException {
         a.createCategory("memes", PW_A);
         a.createCategory("serious", PW_A);
         b.createCategory("memes", PW_B);
