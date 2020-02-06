@@ -5,8 +5,8 @@ import java.util.List;
 
 
 /**
- * Overview: Base type for elements for the DataBoard.DataBoard.
- *           As such every subclass of DataBoard.Data can be used inside a DataBoard.Board
+ * Overview: Base type for elements for the DataBoard.
+ *           As such every subclass of Data can be used inside a Board
  *               (they must comply with the substitution principle obviously)
  * Typ-el:   {user, data, category, nLikes, like_0, ... , like_<nLikes>}
  *               user:     username of the owner of |this|

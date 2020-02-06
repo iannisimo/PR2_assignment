@@ -127,12 +127,9 @@ public class test {
             passPrint(e);
         }
 
-        //TODO
         Iterator<Data> a_ = a.getIterator(PW_A);
         Data d = a_.next();
         a.insertLike(USER_C, d);
-        Data copy = a.get(PW_A, d);
-        //TODO
 
         List<Data> a_list = a.getDataCategory(PW_A, "memes");
         return true;

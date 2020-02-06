@@ -40,7 +40,7 @@ public class Board2 <E extends Data> implements DataBoard<E> {
         if(category == null || passw == null || friend == null) throw new NullPointerException();
         if(!passw.equals(this.passw)) throw new InvalidActionException("Password mismatch");
         if(!cats.contains(category)) throw new InvalidActionException("DataBoard.Category not present");
-        elems.get(cats.indexOf(category)).addFriend(friend); //FIXME
+        elems.get(cats.indexOf(category)).addFriend(friend);
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Board2 <E extends Data> implements DataBoard<E> {
         if(category == null || passw == null || friend == null) throw new NullPointerException();
         if(!passw.equals(this.passw)) throw new InvalidActionException("Password mismatch");
         if(!cats.contains(category)) throw new InvalidActionException("DataBoard.Category not present");
-        elems.get(cats.indexOf(category)).removeFriend(friend); //FIXME
+        elems.get(cats.indexOf(category)).removeFriend(friend);
     }
 
     @Override

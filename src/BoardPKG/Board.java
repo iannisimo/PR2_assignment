@@ -37,7 +37,7 @@ public class Board <E extends Data> implements DataBoard<E> {
         if(category == null || passw == null || friend == null) throw new NullPointerException();
         if(!passw.equals(this.passw)) throw new InvalidActionException("Password mismatch");
         if(!map.containsKey(category)) throw new InvalidActionException("DataBoard.Category not present");
-        map.get(category).addFriend(friend); //FIXME
+        map.get(category).addFriend(friend);
     }
 
     @Override
@@ -46,7 +46,7 @@ public class Board <E extends Data> implements DataBoard<E> {
         if(category == null || passw == null || friend == null) throw new NullPointerException();
         if(!passw.equals(this.passw)) throw new InvalidActionException("Password mismatch");
         if(!map.containsKey(category)) throw new InvalidActionException("DataBoard.Category not present");
-        map.get(category).removeFriend(friend); //FIXME
+        map.get(category).removeFriend(friend);
     }
 
     @Override
@@ -92,7 +92,6 @@ public class Board <E extends Data> implements DataBoard<E> {
     }
 
 
-    // FIXME
     @Override
     public Iterator<E> getIterator(String passw)
             throws NullPointerException, InvalidActionException {
